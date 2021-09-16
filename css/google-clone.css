@@ -1,127 +1,51 @@
-* {box-sizing: border-box; margin: 0; padding: 0;}
+body {margin: 0; padding: 0; font-size: 13px; font-family: Arial, Helvetica, sans-serif;}
 
-.container {height: 94vh;}
+a {text-decoration: none; cursor: pointer;}
 
-html {min-height: 94vh; max-height: 94vh; position: relative; font-family: Arial, Helvetica, sans-serif;}
+header {width: 100%; height: 60px; background-color: white;}
 
-.header {background-color: white;        
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        text-align: right;
-        margin: 0px;
-        border: 4px;
-        padding: 3px;
-        display: block;
-}
-    .top-menu-items {height: 63px;
-                    background-color: white; 
-                    display: flex; 
-                    justify-content: flex-end;}
+header nav {display: flex; justify-content: flex-end;}
 
-        .gmail {
-            margin-top: 8px;
-            margin-right: 8px;
-            border: 2px;
-            padding: 8px;
-            /* justify-content: center; */
-            /* align-items: center; */
-            background-color: white;
-            align-items: center;
-        }
+header nav  .nav-right-section {width: 250px; height: auto; display: flex; list-style: none; justify-content: center; align-items: center;}
 
-        .images {
-            margin-top: 8px;
-            margin-right: 8px;
-            border: 2px;
-            padding: 8px;
-            background-color: white;
-        }
+nav .nav-right-section a {margin-right: 10px; color: #000000 }
 
-        .apps {
-            margin-top: 8px;
-            margin-right: 4px;
-            border: 2px;
-            padding: 0px;
-            /* padding: 8px; */
-            background-color: white;
-        }
+nav .nav-right-section .menu-icon {background-image: url("https://cdn-icons-png.flaticon.com/512/3603/3603178.png"); background-repeat: no-repeat; background-position: center; background-size: contain; width: 25px; height: 25px;} 
 
-        .profile-pic {
-            margin-top: 0px;
-            border: 0px;
-            padding: 0px;
-            /* border: 2px; */
-            /* padding: 8px; */
-            background-color: white;
-        }
+nav .nav-right-section img {border-radius: 50%; margin-left: 10px;}
 
-.content {
-    /* height: 40vh; */
-    width: 100%;
-    /* justify-content: center; */
-    align-items: center;
-    flex-grow: 1;
-    display: flex;
-    background-color: white;
-    /* padding-bottom: 220px; */
-    display: inline-block;
-}
+main {margin-top: 150px;text-align: center;}
 
-.search-content {
-    margin-top: 22vh;
-    height: 62vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    display: inline-block;
-}
+main .main-logo {width: 272px; margin: 0 auto; margin-bottom: 35px;}
 
-        /* Google Logo */
-        .contenedor-1 {justify-content: center; align-items: center; flex-grow: 1; display: flex;}
-            .google-logo {}
+main .main-logo img {width: 272px;}
 
-        /* Search Bar */
-        .contenedor-2 {justify-content: center; align-items: center; flex-grow: 1; display: flex; position: relative;}
-            .search-field {width: 582px; height: 44px; border-color:red; border-radius: 24px; display: block; border: 2px solid #f8f9fa}
-            .contenedor-2 img {position: absolute; top: 6px; left: 680px; height: 68%;}
+main .main-input {width: 530px; margin: 0 auto; margin-bottom: 35px;}
 
-        /* Buttons x2 */
-        .contenedor-3 {justify-content: center; align-items: center; flex-grow: 1; display: flex;}
-            button {background-color: #f8f9fa; padding: 8px; margin: 6px; border: 1px solid #f8f9fa; color: #202124; box-shadow: 0 1px 1px rgba (0, 0, 0, .1); font-size: 14px; width: 127px; height: 36px;}
+main .main-input-container {width: 525px; border-radius: 100px; border: 1px solid #dfe1e5; display: flex; justify-content: center; align-items: center;}
 
-        /* Language options */
-        .contenedor-4 {margin:2px; text-align: center; font-size: 13px; color: #3c4043;}   
-        
-.footer {background-color: #F2F2F2; height: 9vh; width: 100%; 
-    flex-grow: 1;
-    align-items: flex-end;
-    flex-basis: 10rem;
-    color: #A2A2A2;
-    font-size: 13px;
-}
+main .main-input input {width: 450px; height: 40px; border: none; outline: none;}
 
+main .main-input-container:hover {box-shadow: 0 1px 6px 0 #20212447; border-color: #dfe1e500;} 
 
-    .lower-menu-1 {
-        margin-top: 12px;
-        margin-left: 24px;
-        width: 100%;
-        height: 50%;
-        display: inline-flex;
-    }
+main .main-input .search-icon {background-image: url("https://img.icons8.com/android/24/000000/search.png"); background-repeat: no-repeat; background-position: center; background-size: contain; width: 18px; height: 18px;}
 
-    .lower-menu-2 {
-            margin-top: 0px;
-            margin-left: 24px;
-            width: 100%;
-            height: 50%;
-            display: inline-block;
-        }
+main .main-input .micro-icon {background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"); background-repeat: no-repeat; background-position: center; background-size: contain; width: 18px; height: 18px; cursor: pointer;}
 
-    .lower-menu-3 {
-        margin-top: 0px;
-        margin-left: 24px;
-        width: 50%;
-        height: 50%;
-        display: inline-block;
-    }
+main .main-buttons {width: 530px; margin: 0 auto;}
+
+main .main-buttons div {display: inline-block;}
+
+main .main-buttons button {height: 36px; background-color: #F8F9FA; border: 0; font-size: 14px; color: #202124; border-radius: 5px; padding: 0 15px}
+
+main .main-buttons button:hover {border: 1px solid #DADCE0; box-shadow: 0 1px 1px #222;}
+
+footer {width: 100%; height: 50px; position:absolute; bottom: 0; display: grid; grid-template-columns: 1fr 1fr; align-items: center; font-size: 13px; background-color: #F2F2F2; border-top: 1px solid #e4e4e4;}
+
+footer ul {margin: 10px; list-style: none; display: flex; padding-left: 0px;}
+
+footer .footer-left {justify-self: left;}
+
+footer .footer-right {justify-self: right;}
+
+footer ul li a {margin: 10px; color: #5f6368;}
